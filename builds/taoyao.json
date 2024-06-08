@@ -2,8 +2,8 @@
   "response": [
     {
       "maintainer": "dkpost3",
-      "oem": "OEM",
-      "device": "taoyao",
+      "oem": "Xiaomi",
+      "device": "Mi 12 Lite",
       "filename": "EvolutionX-14.0-20240608-taoyao-v9.0-Unofficial.zip",
       "download": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/vvLxJjObx4QDXg",
       "timestamp": 1717863009,
@@ -11,7 +11,7 @@
       "sha256": "5d93bb6bc3e203112989d9806851955c132a92cf37576d277144ad73f6971c06",
       "size": 2494344355,
       "version": "9.0",
-      "buildtype": "Release",
+      "buildtype": "user",
       "forum": "https://4pda.to/forum/index.php?showtopic=1072054&st=280#entry126999714",
       "firmware": "https://github.com/XiaomiFirmwareUpdaterReleases/firmware_xiaomi_taoyao/releases/download/stable-03.06.2024/fw_taoyao_miui_TAOYAOEEAGlobal_OS1.0.10.0.ULIEUXM_68a74ddb9c_14.0.zip",
       "paypal": "",
