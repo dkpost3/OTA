@@ -1,0 +1,24 @@
+{
+  "response": [
+    {
+      "maintainer": "dkpost3",
+      "currently_maintained": true,
+      "oem": "xiaomi",
+      "device": "ziyi",
+      "filename": "EvolutionX-16.0-20250721-ziyi-11.0-Unofficial.zip",
+      "download": "https://sourceforge.net/projects/zotio/files/ziyi/16/EvolutionX-16.0-20250721-ziyi-11.0-Unofficial.zip/download",
+      "timestamp": 1753125367,
+      "md5": "b9b44c8d49e654bbaef26c5b25c76496",
+      "sha256": "739cb5cdb12fcd7fc1a69bd278342633ffcceec40bde5cfb51fdccaf34d1177f",
+      "size": 3308042192,
+      "version": "11.0",
+      "buildtype": "userdebug",
+      "forum": "",
+      "firmware": "",
+      "paypal": "",
+      "github": "",
+      "initial_installation_images": [],
+      "extra_images": []
+    }
+  ]
+}
