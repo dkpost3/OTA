@@ -1,0 +1,55 @@
+This is Android 16 with July 2025 security patches
+Kernel version 5.10.240
+
+Notes:
+==============================
+- Install a HyperOS 2 FW according to your region (https://xmfirmwareupdater.com/firmware/ziyi)
+- LineageOS-based source. Signed build.
+- Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
+- KSU_Next & susfs included.
+- Includes Leica Camera, Dolby Vision and Dolby Atmos.
+
+Device changes:
+==============================
+Don't explicitly build android.hardware.wifi.hostapd@1.0.vendor
+Don't explicitly build libwfdaac_vendor
+Fix overlay for custom ambient display
+Shim libwfdservice with libaudioclient_shim
+doze: Get rid of HelpDialogFragment class
+overlay: Remove deprecated config_mobile_tcp_buffers/networkAttributes
+rro_overlays: Enable ambient AOD
+switch erofs file system
+
+Notable ROM changes:
+==============================
+Adapt app lock to A16
+AmbientDisplay: Add custom pref for devices with custom doze packages
+Audio: fix ~refbase() crash caused by race condition
+AudioPlaybackCapture: solve patchTrack unable to update speed issue
+Effects: Do not allow SW dolby effect to be suspended
+Evolver: Apply expressive icons to about
+Evolver: Use expressive design for icons
+Fix issue with Youtube, Facebook crashing, crash in Settings app
+Fix EglFramebuffer leak
+Fix SwAudioOutputCollection indexing in closeOutput()
+MediaHTTP: resolve mName race condition issue
+Settings: Update HDR strings to match Android Canary release
+SettingsLib: show more APK details on App info screen
+SystemUI: Do not animate scrim when waking to pulse
+SystemUI: Don't hardcode monospace font
+SystemUI: Filter out duplicate notification icons on statusbar
+SystemUI: Hide notifications when quickly expanding QS
+SystemUI: InternetDialog: Fallback to first available subid
+SystemUI: NetworkNameModel: Fall back to SPN if DATA_SPN is null
+SystemUI: Properly clip notification scrim in QQS
+SystemUI: Screenrecord: Add delete action to the notification
+SystemUI: use default dialogCornerRadius for qs customize title
+audio policy: Prevent MMAP flag from getting overwritten with VoIP RX and Direct flag
+fix settings material expressive issues
+footer: remove footer icons bg when blur on
+config: Move adb_root outside userbuild
+hwui: Fix flickering issue in streaming video cases
+issue: After connecting the Bluetooth earphones and projecting the screen, music will play from the earphones. At this point, disconnect the earphones, click play, and the projection will be silent
+limit max kg status bar top padding to status bar height
+vendor: Disable enroll_layout_truncate_improvement
+vendor: drop more flags
