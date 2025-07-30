@@ -18,7 +18,8 @@ Shim libwfdservice with libaudioclient_shim
 doze: Get rid of HelpDialogFragment class
 overlay: Remove deprecated config_mobile_tcp_buffers/networkAttributes
 rro_overlays: Enable ambient AOD
-switch erofs file system
+switch: Erofs file system
+fixit: mic & speacker
 
 Notable ROM changes:
 ==============================
