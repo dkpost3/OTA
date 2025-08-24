@@ -8,11 +8,9 @@ Notes:
 - KSU_Next & susfs included.
 - Includes Leica Camera, Dolby Vision and Dolby Atmos.
 
-This is Android 16 with August 2025 security patches
-
 Device changes:
 ==============================
-FIX eSIM
+fix eSIM
 switch Sony Dolby Audio
 adds support video calling
 
