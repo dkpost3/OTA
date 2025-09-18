@@ -6,74 +6,33 @@ Notes:
 - LineageOS-based source. Signed build.
 - Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
 - KSU_Next & susfs included.
-- Includes Leica Camera, Dolby Vision and Dolby Atmos.
+- Includes MiuiCamera, Dolby Atmos.
 
 Device changes:
 ==============================
-kernel: update kernel 5.10.242
-Translate: ru - dolby/display/battery/esim
-fixit: lte+, bt_auto
-revert: miui galery/calc
+Kernel: update kernel 5.10.244
+Build IFAAService from source
+Drop Dolby Vision (fixes crashes in Netflix and other streaming apps)
+Drop unused QTI VM manager blobs (fixes long bootlogo time)
+overlay: set 60hz refresh rate for AOD
+sepolicy: Allow apps to read Mlipay and IFAA props
+sepolicy: Allow system_app to access Mlipay service
 
 Notable ROM changes:
 ==============================
-Catch Runtime Exception thrown by ProtoOutputStream.flush() api
-ColumbusService: Make use of Expressive SliderPreference
-ColumbusService: Switch to material expressive design for preferences
-DevelopmentSettings: Disable automatic updates
-Disable useless Keystore features
-Evolver: Add brightness slider shapes
-Evolver: Add slider increment guard for CustomSeekBarPreference
-Evolver: Add switch for small notifications
-Evolver: Fix and improve keybox data preference
-Evolver: Remove tinting reset icon in CustomSeekbarPreference
-Evolver: Update CustomSeekbarPreference to use material expressive layout
-Evolver: Update tensor codes for P10
-Evolver: notification row transparency switch
-Evolver: pulse: Set default interval for seekbar prefs
-Fix RuntimeException in appsearch
-Fix the issue of avoiding app crashes in HWUI (Hardware UI)
-Fix usb camera number is not correct after plug out
-GameSpace: Setup material expressive design for preferences
-GameSpace: Update CustomSeekBarPreference to use material expressive layout
-Ignore prebuilt/generated directory
-MediaPlayer: stop logspam
-Optimize home to desktop transition speed
-PixelPropsUtils: Add back play store to PIF
+Add new audio from mustang BD3A.250721.001.B7
+Add new setup wizard props from mustang BD3A.250721.001.B7
+AnimationUtils: Fix inverted flag logic and wrong timebase fallback
+Evolver: Add toggle for QS tile haptic feedback
+Evolver: Drop AOD wallpaper toggle
+Evolver: Move switches to statusbar tuner
+Evolver: Re-enable Smart Pixels
+Evolver: September 2025 update
+Fix lock screen charging values
 PixelPropsUtils: Do not block attestation if custom keybox is loaded
-PixelPropsUtils: Fix props for s24 ultra
-PixelPropsUtils: Switch recent Pixel props and tensor codes to P10
-Prevent NPE on SharedConnectivityService on GMS builds
-Reduce blocking operation on display thread
-Revert "MultiAccessUnit reflector helper allocated once per ComponentStore"
-Screenrecord: Fix notifications not being dismissed
-Settings: Add support for daily and weekly data usage cycles
-Settings: Fix illegal state exception on StorageSelectionPreferenceController
-Settings: Move force dark mode to dark mode settings
-Settings: Re-add stop tracking listener in gesture navigation
-Settings: Update power button sensitivity slider to SliderPreference
-Settings: Update strings for override dark mode
-SliderPreference: Add stop tracking listener
-SliderPreference: Fix thumb color
-SystemUI: Remove nested PlatformTheme in QS fragment
-Updater: push-update: Allow specifying serial number
-audio: fix SAD and SAM inconsistent after audioserver crash
-bt: ignore invalid mask
-config: Fixup blur flag
-config: pihooks: Update to Baklava QPR2 Beta 1
-core: PackageManager: Allow installation with partial ABI support
-extras: Add material expressive icon shapesShow description for 77d483a
-extras: Drop unused auto brightness icons
-extras: Fix powermenu color for light theme
-fix split shade missing issue
-gui: Fix buffer caching issue causing flicker
-overlay: Make Google Sans the default headline font
-release: Disable apply_picture_profiles
-release: Disable lpp squeeze effect
-release: Remove flag for using emphasized font family for shade header
-release: Remove glanceable hub
-release: Remove glitchy depth push scaling effect
-release: Remove some useless notification flags
-smartspace: Fix NoSuchElementException in CallbackWrapper
-updatePolicyState after updating all EffectHandle state
-vars: Update qcom tags
+Settings: power off verify
+SystemUI: Add flashlight strength
+SystemUI: add volume tile
+config: Set new audio from mustang BD3A.250721.001.B7 as default
+extras: Drop Accord
+gms: Update from mustang BD3A.250721.001.B7
