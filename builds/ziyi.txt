@@ -14,9 +14,14 @@ Kernel: update kernel 5.10.244
 Build IFAAService from source
 Drop Dolby Vision (fixes crashes in Netflix and other streaming apps)
 Drop unused QTI VM manager blobs (fixes long bootlogo time)
+Enhance LE Audio and voice codec configurations
+Switch to AOSPA Dolby app
 overlay: set 60hz refresh rate for AOD
+rootdir: Disable eSE power manager service in Indian SKU
 sepolicy: Allow apps to read Mlipay and IFAA props
 sepolicy: Allow system_app to access Mlipay service
+Power/Perf:switch libperfmgr
+thermal: fix
 
 Notable ROM changes:
 ==============================
@@ -29,10 +34,11 @@ Evolver: Move switches to statusbar tuner
 Evolver: Re-enable Smart Pixels
 Evolver: September 2025 update
 Fix lock screen charging values
-PixelPropsUtils: Do not block attestation if custom keybox is loaded
 Settings: power off verify
 SystemUI: Add flashlight strength
 SystemUI: add volume tile
 config: Set new audio from mustang BD3A.250721.001.B7 as default
 extras: Drop Accord
 gms: Update from mustang BD3A.250721.001.B7
+services: core: wfd: extend check for qualcomm wfd jar
+wm: add overlay-driven allowlist for fullscreen notch usage
