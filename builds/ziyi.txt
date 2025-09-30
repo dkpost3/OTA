@@ -44,7 +44,7 @@ overlay: Bring back QTI UIM GBA package
 taro: Move soc model property to qcv utils
 taro: Set SoC manufacturer and model properties
 taro: update API level to 32
-UDFPS: adds pic
+UDFPS: adds variants pic
 
 Notable ROM changes:
 ==============================
