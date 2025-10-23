@@ -10,54 +10,38 @@ Notes:
 
 Device changes:
 ==============================
-Build sensorservice 1.0 HAL
-Disable FRP
-Update blobs from OS2.0.209.0.VMRMIXM
-disable verbose camera logs
-miuicamera: Update patches and blobs to OS2.0.209.0.VMRMIXM
-props: Force disable low ram config
-rootdir: Remove redundant mlock() limit setting
-sepolicy: Add sepolicy to compat ignore list
+Fix copy path for android.hardware.se.omapi.ese.xml
+Upstream Lineage kernel to 5.10.245 (includes fix for random reboots)
+rootdir: Enable WLAN SSR recovery
+libinit: Drop fingerprint override
+Update:  Vulkan 1.3 and adreno drivers
 
 Notable ROM changes:
 ==============================
-Evolver: Add Dynamic charging ripple switch 
-Evolver: Bring back wallpaper blur and dim feature
-LMOFreeform: Fix NPE in service manager
-LMOFreeform: Fix app drawer and edit icon disappearing with low bg transparency
-LMOFreeform: Fix back handling on customization page
-LMOFreeform: Refactor FreeformWindow to use nullable types and improve initialization checksShow description for d65928e
-LMOFreeform: Remove hardcoded strings from customization page
-PixelPropsUtils: Update fingerprints to October 2025 release
-Remove commit causing BT disconnection issues
-Remove commit causing memory leaks in launcher
-Settings: Fix stray divider in connected devices screen
-Settings: Notification bundles: remove empty drawable
-Settings: Notification summaries: remove empty drawable
-Settings: display: allow changing HDR brightness intensity
-Settings: store cloned profile user id
-Spoof encrytion prop as encrypted
-SystemUI: Add/remove notification listener enhancement
-SystemUI: Improve edge light feature
-SystemUI: Improve guarding header image
-SystemUI: Improve pulse on new tracks feature
-WallpaperUtils: Switch to PNG compression for faster loading
-config: Load boot image profile from frameworks/base
-config/common: Disable dexpreopt debug info on user builds
-config/common: Reduce system server verbosity
-config/common: preopt extracted apk always
-core: add audio policy to fix AOSP audio cpu usage
-fonts: add missing blacklist checks | font weight adjustment fix
-sepolicy: Address denial for webview crash
-sepolicy: Allow vending to read spoof xml
-skip mediametrics when statsd is not available
-task_profiles: Use foreground cpuset for SurfaceFlinger
-vendor: Do not clone default AudioFX app
-vendor: component-overrides: Force disable google settings intelligence injects
-Merge October 2025 security patches
-Settings: Fix gpu renderer options unsetting hwui renderer
-SystemUI: ScrimUtils: Fix initial value for keyguard showing
-apns: Update for CTM(Macau)
-libs: intercepting hwui renderer property read
-statsd: Disable native stats collection service
-version: Uprev to 11.3
+CpuMonitorService: reduce cache size
+Evolver: Add customization for proper circle QS tile shape
+Evolver: Add prop to allow blocking cert chain
+Evolver: Add toggle for doze wallpaper
+Evolver: adding shake gesture feature support
+Evolver: Edge light animation style
+KeyboxImitationHooks: Only generate certificates for play integrity calls
+PixelPropsUtils: Add prop to allow blocking cert chain
+PixelPropsUtils: Cleanup
+PixelPropsUtils: Fix failing strong integrity with PIF disabled
+SelfRemovingPreference: set visibility at early stage
+SystemUI: Apply nothingOS fallback scrim color
+SystemUI: Blur the power menu
+SystemUI: Fix lockscreen large clock alignment
+SystemUI: Fix scrim using stale shade colors on UI mode change
+SystemUI: Remove dozing condition for lockscreen media art
+SystemUI: Revamp Network Traffic
+SystemUI: Sync power menu and restart menu layout
+Update translations
+config: Update pihooks fp to A16 QPR2 Beta 3.1
+core: Improve hide adb/developer spoofing
+gms: Update blobs from mustang BD3A.251005.003.W3
+gms: product: Update missing libraries for further updates
+hosts: Block OTA downloading from GMS
+pixel-style: Add new and update audio from mustang BD3A.251005.003.W3
+pixel-style: Remove config_location{Extra,Provider}PackageNames
+twilight: TwilightService: fix onAlarm
