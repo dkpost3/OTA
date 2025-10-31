@@ -12,12 +12,15 @@ Device changes:
 ==============================
 Align verified boot algorithms and rollback indices with stock
 Decommonize vendor security patch level
-Update common blobs and firmware from OS2.0.202.0.VLFMIXM
+Update common blobs and firmware from OS2.0.202.0.VLLEUXM
 sepolicy: Allow camera HAL to find quickcamera HAL
 sepolicy: Cleanup audio related policies
 sepolicy: Correct audio hal socket rules and use unix_socket_connect macro
 sepolicy: Drop unused Goodix touchscreen wakeup label
 sepolicy: Drop unused thermal_zone87 temp label
+libstagefright: Disable thumbnail_block_model
+props: Remove obsolete SurfaceFlinger properties
+SystemUI: add rounded corner for bottom/top 
 
 Notable ROM changes:
 ==============================
