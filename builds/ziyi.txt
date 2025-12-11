@@ -6,12 +6,22 @@ Notes:
 - LineageOS-based source. Signed build.
 - Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
 - KSU_Next & susfs included.
-- Includes MiuiCamera, Dolby Atmos.
+- Includes MiuiCamera, Dolby Atmos, ESIM
 
 Device changes:
 ==============================
-A16_qpr1-RC
+Switch to SwitchPreferenceCompat
+ThermalSettingsFragment: Defer applying divider
+Update some soong config variables to bool type
+devicesettings: Convert for M3E support
+parts: Apply Expressive theme
+sepolicy: Add binder call permissions for various HALs in system_app
+overlay: fixed define main display shape
+overlay: fixed refine display cutout region
+overlay: Add rounded corner drawables
+overlay: Add status bar height
+shell: fixed post_boot sh diwali
 
 Notable ROM changes:
 ==============================
-version: Uprev to 11.5
+Update to Android 16 QPR1
