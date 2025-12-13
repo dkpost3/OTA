@@ -24,4 +24,35 @@ shell: fixed post_boot sh diwali
 
 Notable ROM changes:
 ==============================
-Update to Android 16 QPR1
+Add Notification Summaries Settings animation
+Allow to hide arrow for back gesture
+DevelopmentSettings: Hide OEM unlock by default
+Evolver: Add matrix pulse renderer style
+Evolver: Always restart SystemUI after font update
+Evolver: Drop Settings switch to allow blocking cert chain
+Evolver: Introduce Lockscreen Now playing
+Evolver: Rewrite restart utils
+Evolver: Unload old theme package before applying new one
+Optional haptic feedback on back gesture
+Screen capture: Update record icon
+Screenrecord: Fix notifications not being dismissed
+ScrimUtils: Add notifier for user change
+Settings: Add three-fingers-swipe to screenshot
+Settings: Clean up for Adaptive playback settings
+Settings: Enable expressive theme layout for various activities
+Settings: Promote external doze settings to first class
+Settings: Remove summary placeholder from "System updates" pref
+SliderPreference: Add stop tracking listener
+SystemUI: Do not update network layout when toggling hotspot
+SystemUI: Fix memory leaks and thread safety in statusbar ongoing chip
+SystemUI: Fix nowplaying memory leaks and performance issues
+SystemUI: Fixing qqs flicker when expanding qs after collapsing panel from non-first page
+SystemUI: Support legacy vibrator haptics for slider haptics as well
+SystemUI: Update the global actions icons
+base: Add method to restart SystemUI
+center-cropping media bitmaps to improve quality
+core: ContextImpl: prevent null File crash on external storage
+fixup! Settings: Forward port lock pattern grid size
+overlay: Use google sans flex for lockscreen clock
+preventing media album bitmaps from impacting performance
+release: Import flags from stx
