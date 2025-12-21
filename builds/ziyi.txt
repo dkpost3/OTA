@@ -5,54 +5,46 @@ Notes:
 - Install a HyperOS 2 FW according to your region (https://xmfirmwareupdater.com/firmware/ziyi)
 - LineageOS-based source. Signed build.
 - Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
-- KSU_Next & susfs included.
+- KSU_Next
 - Includes MiuiCamera, Dolby Atmos, ESIM
 
 Device changes:
 ==============================
-Switch to SwitchPreferenceCompat
-ThermalSettingsFragment: Defer applying divider
-Update some soong config variables to bool type
-devicesettings: Convert for M3E support
-parts: Apply Expressive theme
-sepolicy: Add binder call permissions for various HALs in system_app
-overlay: fixed define main display shape
-overlay: fixed refine display cutout region
-overlay: Add rounded corner drawables
-overlay: Add status bar height
-shell: fixed post_boot sh diwali
+Defer refresh rate changes when screen is off
+Define config_screenRecorderAVCProfileLevel
+Disable EGL image tracking
+kernel: update ksu-next 3.0
+kernel: susfs deleted
+Shim WFD with libinput_shim (fix WFD crash)
+
 
 Notable ROM changes:
 ==============================
-Add Notification Summaries Settings animation
-Allow to hide arrow for back gesture
-DevelopmentSettings: Hide OEM unlock by default
-Evolver: Add matrix pulse renderer style
-Evolver: Always restart SystemUI after font update
-Evolver: Drop Settings switch to allow blocking cert chain
-Evolver: Introduce Lockscreen Now playing
-Evolver: Rewrite restart utils
-Evolver: Unload old theme package before applying new one
-Optional haptic feedback on back gesture
-Screen capture: Update record icon
-Screenrecord: Fix notifications not being dismissed
-ScrimUtils: Add notifier for user change
-Settings: Add three-fingers-swipe to screenshot
-Settings: Clean up for Adaptive playback settings
-Settings: Enable expressive theme layout for various activities
-Settings: Promote external doze settings to first class
-Settings: Remove summary placeholder from "System updates" pref
-SliderPreference: Add stop tracking listener
-SystemUI: Do not update network layout when toggling hotspot
-SystemUI: Fix memory leaks and thread safety in statusbar ongoing chip
-SystemUI: Fix nowplaying memory leaks and performance issues
-SystemUI: Fixing qqs flicker when expanding qs after collapsing panel from non-first page
-SystemUI: Support legacy vibrator haptics for slider haptics as well
-SystemUI: Update the global actions icons
-base: Add method to restart SystemUI
-center-cropping media bitmaps to improve quality
-core: ContextImpl: prevent null File crash on external storage
-fixup! Settings: Forward port lock pattern grid size
-overlay: Use google sans flex for lockscreen clock
-preventing media album bitmaps from impacting performance
-release: Import flags from stx
+Evolver: Bring back Icon shape styles
+Evolver: Disable FP vibration toggles
+Evolver: Drop Velvet spoof toggle
+Evolver: Implement json-based game spoofing
+Merge December 2025 security patches
+Settings: Bring back GPSU entry from firmware version
+Settings: Pull navigation mode settings out
+Settings: Show MainlineModuleVersionPreference
+Settings: Update illustrations from Canary
+apex: Import Google's Permission APEX
+apex: Declare included apps in com.google.android.permission.apex
+apex: Override PermissionController and SafetyCenterResources as well
+component-overrides: Enable GPSU
+extras: iconshapes: drop legacy iconshapes for now
+extras: Set default game props
+fixup! SystemUI: tuner: Convert for M3E support
+gms: Drop prebuilts of CredentialManager, DeviceIntelligenceNetworkPrebuilt and HealthIntelligencePrebuilt
+gms: Include ModuleMetadataGoogle (aka Google Play system update)
+overlay: Enable RBC Setting for all
+pixel-style: Enable GPSU support
+pixel-style: Overlay launcher package name in System UI
+pixel-style: Remove evendimmer in favour of RBC
+pixel-style: bp4a overlay updates
+release: Bump Security String to 2025-12-01
+release: enable extendible theme manager
+release: Enable psb reskin
+version: Uprev to 11.5.1
+wm: Allow disabling window blurs by default
