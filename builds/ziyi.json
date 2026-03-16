@@ -5,7 +5,7 @@
       "currently_maintained": true,
       "oem": "xiaomi",
       "device": "ziyi",
-      "filename": "EvolutionX-16.0-20260316-ziyi-11.6.2-Unofficial.zip",
+      "filename": "EvolutionX-16.0-20260317-ziyi-11.6.2-Unofficial.zip",
       "download": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/rNQeZdgQ_U04IQ",
       "timestamp": 1773630485,
       "md5": "09fbe7f9cdbe141b79814b08b6395888",
@@ -13,12 +13,17 @@
       "size": 3470060426,
       "version": "11.6.2",
       "buildtype": "userdebug",
+      "android_version": "16",
+      "security_patch": "2026-03-01",
       "forum": "https://t.me/ru13lite",
       "firmware": "",
       "paypal": "",
-      "github": "dkpost3",
-      "initial_installation_images": [],
-      "extra_images": []
+      "github": "https://github.com/dkpost3",
+      "initial_installation_images": [
+                   "https://raw.githubusercontent.com/dkpost3/OTA/bka/Screenshot.webp",
+      ],
+      "extra_images": [],
+      "changelog": "https://raw.githubusercontent.com/dkpost3/OTA/bka/ziyi.md"
     }
   ]
 }
