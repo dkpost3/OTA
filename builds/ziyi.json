@@ -6,11 +6,11 @@
       "oem": "xiaomi",
       "device": "ziyi",
       "filename": "EvolutionX-16.0-20260317-ziyi-11.6.2-Unofficial.zip",
-      "download": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/rNQeZdgQ_U04IQ",
-      "timestamp": 1773630485,
-      "md5": "09fbe7f9cdbe141b79814b08b6395888",
-      "sha256": "7b171f74062a84fefacbf6c8c2722eff74be43729bfc3aa5a675247ebbb3e110",
-      "size": 3470060426,
+      "download": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/0yVX353suk-a9g",
+      "timestamp": 1773697646,
+      "md5": "c54ff84f7a34bafda0fb7e5fb906ff30",
+      "sha256": "6f5d9cb732751d3d2b3dcffa3922706563d5276cb6a4eee5c69624d03b6d5f9e",
+      "size": 3470065920,
       "version": "11.6.2",
       "buildtype": "userdebug",
       "android_version": "16",
@@ -22,7 +22,9 @@
       "initial_installation_images": [
                    "https://raw.githubusercontent.com/dkpost3/OTA/bka/Screenshot.webp",
       ],
-      "extra_images": [],
+      "extra_images":  [
+                   "https://raw.githubusercontent.com/dkpost3/OTA/bka/Screenshot.webp",
+      ],
       "changelog": "https://raw.githubusercontent.com/dkpost3/OTA/bka/ziyi.md"
     }
   ]
