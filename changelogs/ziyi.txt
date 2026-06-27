@@ -1,34 +1,5 @@
-This is Android 16 QPR2 with 03/2026 security patches
-
-Notes:
-==============================
-- Install a HyperOS 2 FW according to your region (https://xmfirmwareupdater.com/firmware/ziyi)
-- LineageOS-based source. Signed build.
-- Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
-- KSU 3.1 + SUSFS 2.0
-- Includes MiuiCamera, Dolby Atmos, ESIM
-
-Device changes:
-==============================
-Update blobs from OS3.0.3.0.VMRMIXM
-sync powerhint
-
-Notable ROM changes:
-==============================
-Evolver: Add classic QS panel style for tiles
-Evolver: Add ongoing chip opacity control
-Evolver: Allow clean idle manager stats
-Evolver: Introduce cutout progress ring
-Evolver: Refactor idle manager
-Fix PlanesLockGuard buffer lock leak
-Fix PlanesLockGuard copy-assignment delete type
-Fix PlanesLockGuard::getStatus() return type
-Reland "pixel-style: config: Update SystemUIGXOverlay package name"
-StrictMode triggers a watchdog
-SystemUI: Add background to ongoing progress chip
-SystemUI: Allow disable statusbar combined signal
-SystemUI: Fix flashlight not available on boot
-audio: fix direct byte buffer not release
-config: Spoof BuildFingerprint as Pixel Beta
-config: Update pihooks to Android 17 Beta 3
-prebuilt_etc: Add prebuilt_addon_d module
+# 27-Jun-2026
+- Kernel Upstream
+- Platform Upstream
+- MiuiCamera Update
+- Add Dolby Vision
