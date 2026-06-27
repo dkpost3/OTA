@@ -1,24 +1,45 @@
 {
-"response": [
+  "response": [
     {
-      "maintainer": "dkpost3",
-      "currently_maintained": true,
-      "oem": "xiaomi",
-      "device": "ziyi",
-      "filename": "EvolutionX-16.0-20260514-ziyi-11.7-Unofficial.zip",
-      "download": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/smlQJalYomVp6g",
-      "timestamp": 1778727494,
-      "md5": "c3a237964bb3177400fa518bf1c7eb12",
-      "sha256": "8d795629a978b93486c5fc80266ae59b32edc97604f740e3a50bae9b8faade38",
-      "size": 3600740998,
-      "version": "11.7",
-      "buildtype": "userdebug",
-      "forum": "https://t.me/ru13lite",
-      "firmware": "",
-      "paypal": "",
-      "github": "dkpost3",
-      "initial_installation_images": [],
-      "extra_images": []
+      "datetime": "1782546976",
+      "filename": "PixelOS_ziyi-16.2-20260627-0757.zip",
+      "id": "a8224caed4e5cc0fd90515301ed14b5df8792f820d1d13186402923ee2517380",
+      "size": 2872332184,
+      "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/uB_XvVjJKbUWiw",
+      "stream_url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/uB_XvVjJKbUWiw",
+      "version": 16,
+      "stream": true,
+      "payload": [
+        {
+          "offset": 4369,
+          "FILE_HASH": "zIFh+lKC6qpkLRM9p3wC94xGlQqkS85BKvKDjIoUQJI=",
+          "FILE_SIZE": "2872324600",
+          "METADATA_HASH": "ylILYcXScP4oMeaKqOWDbyXCkW11282N8JplWeaOaao=",
+          "METADATA_SIZE": "203610"
+        }
+      ],
+      "additional_images": [
+        {
+          "name": "recovery.img",
+          "SHA256": "3e6e39d49a1639135c9a1f6fed63b774a8b06079f35a81ba5d4a18b582b0b4f0",
+          "size": 104857600
+        },
+        {
+          "name": "dtbo.img",
+          "SHA256": "caaae0c9cc3792eee529781a7b2e25d619f802fc589a65cb5dbc5d525b788849",
+          "size": 25165824
+        },
+        {
+          "name": "boot.img",
+          "SHA256": "334502690a9b5c8aec1bdf8e95811b396a028c58227a576ff9edeec9f7c74a4c",
+          "size": 201326592
+        },
+        {
+          "name": "vendor_boot.img",
+          "SHA256": "06b1ac2b89847ea4fee21deefc3777857d2149355a5bea96110c753e2e26d68e",
+          "size": 100663296
+        }
+      ]
     }
   ]
 }
