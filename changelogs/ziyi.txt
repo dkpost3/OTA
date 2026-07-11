@@ -1,3 +1,9 @@
+# 11-Jul-2026
+- add AutoEQ with Dolby 
+- Update KSU-Next 3.3.0
+- Kernel Upstream
+- Platform Upstream
+
 # 27-Jun-2026
 - Kernel Upstream
 - Platform Upstream
