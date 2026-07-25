@@ -1,4 +1,4 @@
-# 11-Jul-2026
+# 25-Jul-2026
 - Fix FastCharging
 - Updated Display DTS 
 - Updated sensors
