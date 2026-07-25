@@ -1,42 +1,42 @@
 {
   "response": [
     {
-      "datetime": "1783744698",
-      "filename": "PixelOS_ziyi-16.2-20260711-0438.zip",
-      "id": "bd19d2d88906701967fad139a351a2180377d9e5d330779e6d2b0cc9a210a4ad",
-      "size": 2988385087,
-      "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/uTThfc_9W-EUUw",
-      "stream_url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/uTThfc_9W-EUUw",
+      "datetime": "1784986355",
+      "filename": "PixelOS_ziyi-16.2-20260725-1333.zip",
+      "id": "69256370355e051ff9626fabb31a76791dcdac018afc0909e9f1d9ac1f61b860",
+      "size": 2886853158,
+      "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/Aqz6qoR07bgJ6w",
+      "stream_url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/Aqz6qoR07bgJ6w",
       "version": 16,
       "stream": true,
       "payload": [
         {
           "offset": 4369,
-          "FILE_HASH": "ONE3dBmTLV2BPL9fJkcat4AfUkGlxxqZ9BSE+zNHuoA=",
-          "FILE_SIZE": "2988377503",
-          "METADATA_HASH": "A60DaVT3QllgTkY2iagt+1i/13aPyka/uYJuM3/lr24=",
-          "METADATA_SIZE": "212557"
+          "FILE_HASH": "LENRMLt0Un8FNwK0FIscAwCiM7apRojsKSiuV525nPY=",
+          "FILE_SIZE": "2886845574",
+          "METADATA_HASH": "NxSIrHBUEB3RT31Yxg17BVodIweMTiRxkXJp4bJpnEI=",
+          "METADATA_SIZE": "206398"
         }
       ],
       "additional_images": [
         {
           "name": "recovery.img",
-          "SHA256": "f1b2e29d476c12a7d7548705ffb41f819c72d485d0d787b8bf466a63f2619a79",
+          "SHA256": "c2932ba725739e5c52f678fa78f45d8c7580033fbcd44b39352b8224342ac917",
           "size": 104857600
         },
         {
           "name": "dtbo.img",
-          "SHA256": "f2094227f03d1f23715d8e50f5bf7e97c73f051c45632fc64ca70729cf6cb36a",
+          "SHA256": "f76c5e937828588678a34c7e59849548af2ac691f8262de0c82783421d3987f1",
           "size": 25165824
         },
         {
           "name": "boot.img",
-          "SHA256": "b82cac36fae05e5dd646e9213030b6445cd44e793be66a385b1287f3c6352435",
+          "SHA256": "aceb5954c69a62d64898b40d29a59602078cc73c93bcd99f0ceb190d468eb959",
           "size": 201326592
         },
         {
           "name": "vendor_boot.img",
-          "SHA256": "81467de932204bafeffc5c8a22de2d35a9138e7fdf86266485bbda6714e7d6b8",
+          "SHA256": "a12432b85796f64806df95b704064071ba58f4590dda729149a2120ee1154cd7",
           "size": 100663296
         }
       ]
