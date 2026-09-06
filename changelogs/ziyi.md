@@ -1,7 +1,49 @@
+# 04-Sep-2026
+
+## `device/qcom/sepolicy_vndr/legacy-um`
+- sepolicy_vndr: kona: Label qcom,pm8150l@5:qcom,leds@d300 (`89590c1c5`, soralis0912)
+
+# 01-Sep-2026
+
+## `packages/apps/Aperture`
+- Automatic translation import (`cf1bc0a`, LineageOS Infra)
+
+## `packages/apps/FMRadio`
+- Automatic translation import (`9382971`, LineageOS Infra)
+
+## `packages/resources/devicesettings`
+- Automatic translation import (`e91c799`, LineageOS Infra)
+
+# 31-Aug-2026
+
+## `packages/modules/Connectivity`
+- Revert "Use BPF to block socket creation when restricted" (`12221cef10`, hridaya)
+- Revert "Always drop non-VPN ingress in lockdown mode" (`cc2435e993`, hridaya)
+- Revert "Firewall: More apps/uids again" (`2af9fc5d0d`, hridaya)
+
+## `system/extras`
+- Revert "lpmake: Remove --auto-slot-suffixing support." (`c2e4fff6`, Terminator-J)
+
+## `vendor/custom`
+- build: envsetup: Grab kernel LLVM version from vendor/lineage (`b28540c`, LuK1337)
+
+## `vendor/pixel/gms`
+- config: unset config_evenDimmerEnabled (`7feb332`, Ashwin Devi Srinivasan)
+
 # 30-Aug-2026
 
 ## `device/lineage/sepolicy`
 - sepolicy: Label basic USB AIDL HAL service (`6151759`, Yumi Yukimura)
+
+## `frameworks/base`
+- Revert "Firewall: Transport-based toggle support (1/3)" (`c189df23681a`, Ashwin Devi Srinivasan)
+
+## `packages/apps/Settings`
+- Settings: Relocate status bar icon manager to System (`01e89241a2d`, Ashwin Devi Srinivasan)
+- Settings: Relocate Navigation mode preference (`4588e0a5255`, aswin7469)
+
+## `packages/modules/Connectivity`
+- Revert "Firewall: Transport-based toggle support (3/3)" (`7e95e4dff4`, Ashwin Devi Srinivasan)
 
 ## `vendor/pixel/gms`
 - gms: Add accessibility service and ordering configs to GoogleSettingsOverlay (`991faad`, Ashwin Devi Srinivasan)
@@ -37,77 +79,21 @@
 - FR: Update APN for Bouygues Telecom (`a57664f`, Mashopy)
 
 ## `vendor/crowdin`
+- overlays: Import translations for "Status bar" from Pixel (`efeb628`, Ashwin Devi Srinivasan)
 - Import Crowdin Translations (`7dbfcc6`, Karan Parashar)
 - crowdin: Prepare translation infrastructure (`800d5bd`, Karan Parashar)
+
+## `vendor/lineage`
+- Merge branch 'lineage-24.0' of https://github.com/LineageOS/android_vendor_lineage into HEAD (`98a80a84`, lemezohaib)
 
 # 28-Aug-2026
 
 ## `system/memory/libion`
 - libion: Make available to com.android.npumanager (`abd899d`, ralph950412)
 
+## `vendor/lineage`
+- release: Update default Clang version from 22.0.1 to 22.0.2 (`3d3e74fb`, LuK1337)
+- build: Use kernel LLVM version from release flags (`32f55df4`, LuK1337)
+
 ## `vendor/pixel/gms`
 - gms: Enable one-pane layouts for embedded activities for tablets (`560c311`, Ashwin Devi Srinivasan)
-
-# 27-Aug-2026
-
-## `external/chromium-webview/patches`
-- Update Chromium Webview to 152.0.7977.64 (`209a6d2`, Kevin F. Haggerty)
-
-## `external/chromium-webview/prebuilt/arm`
-- Update Chromium Webview arm to 152.0.7977.64 (`80e8063`, Kevin F. Haggerty)
-
-## `external/chromium-webview/prebuilt/arm64`
-- Update Chromium Webview arm64 to 152.0.7977.64 (`a6b2364`, Kevin F. Haggerty)
-
-## `external/chromium-webview/prebuilt/x86`
-- Update Chromium Webview x86 to 152.0.7977.64 (`58479e5`, Kevin F. Haggerty)
-
-## `external/chromium-webview/prebuilt/x86_64`
-- Update Chromium Webview x86_64 to 152.0.7977.64 (`2767453`, Kevin F. Haggerty)
-
-## `vendor/apn`
-- PL: Remove Aster (`eae6025`, Wiktor Rudzki)
-- PL: Remove Mobilking and MNI Mobile (`dae435a`, Wiktor Rudzki)
-- PL: Remove Era & Tak-Tak (`6f1162e`, Wiktor Rudzki)
-- PL: Remove mBank Mobile (`c40ee06`, Wiktor Rudzki)
-- PL: Remove PlusWAP (`37974c6`, Wiktor Rudzki)
-- PL: Remove GaduAIR (`874c462`, Wiktor Rudzki)
-- PL: Remove Carrefour Mova (`5355f6b`, Wiktor Rudzki)
-
-# 25-Aug-2026
-
-## `prebuilts/extract-tools`
-- apktool: Update to v3.0.3 (`aaeb969`, LuK1337)
-
-# 24-Aug-2026
-
-## `packages/apps/Updater`
-- Updater: Shorten preferences menu entry (`5fc7936`, Ashwin Devi Srinivasan)
-- Updater: Enable performance mode by default (`52da21f`, charcoalpt)
-- Updater: Pixel-fidelity UI refinements (`1b4aad6`, charcoalpt)
-
-# 23-Aug-2026
-
-## `tools/extract-utils`
-- sdat2img.py: Switch shebang line to python3 (`06594f2`, Wiktor Rudzki)
-
-# 22-Aug-2026
-
-## `device/lineage/sepolicy`
-- common: private: Don't audit bootanimation searching system_data_file (`b446a7e`, Nolen Johnson)
-- atv: Don't audit Katniss cgroup spam (`816baaa`, Nolen Johnson)
-- sepolicy: atv: vendor: Don't audit TvSettings reaching into GMS dirs (`a85122e`, Nolen Johnson)
-
-## `packages/apps/Aperture`
-- Aperture: Update CameraX to 1.7.0-alpha03 (`88625a9`, LuK1337)
-
-## `packages/apps/Updater`
-- Updater: Adapt translations (`8b5fd69`, Ashwin Devi Srinivasan)
-- Updater: Adapt updater for PixelOS (`9f729b6`, Ashwin Devi Srinivasan)
-- Updater: Use Pixel loading animation (`6f29b07`, AdarshGrewal)
-- Updater: Remove superseded settings UI (`0f10268`, AdarshGrewal)
-- Updater: Present updates in the system update screen (`b2d0246`, AdarshGrewal)
-- Updater: Add Pixel-style system update screen (`31d4a1e`, AdarshGrewal)
-
-## `vendor/apn`
-- FR: Update APN for SFR (`dd249f1`, Nolen Johnson)
