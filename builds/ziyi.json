@@ -9,7 +9,7 @@
                 "sha256": "88eb1ad7f08a33b30a9918a7fc5ccd0330e0648e08880c5659858aaf5263020f",
                 "size": 3231252462,
                 "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/K_6aYOJ6rXuzqg",
-                "ota_property_files": "payload_metadata.bin:4567:189604,payload.bin:4567:3231244680,payload_properties.txt:3231249305:156,apex_info.pb:2191:1487,care_map.pb:3725:795,metadata:69:679,metadata.pb:816:1327",
+                "ota_property_files": "payload_metadata.bin:4567:189604,payload.bin:4567:3231244680,payload_properties.txt:3231249305:156,apex_info.pb:2191:1487,care_map.pb:3725:795,metadata:69:679,metadata.pb:816:1327"
             }
         ],
         "type": "ci",
