@@ -14,17 +14,6 @@
         ],
         "type": "ci",
         "version": "17.0",
-        "incremental": [
-            {
-                "filename": "PixelOS_ziyi-17.0-20260915-0246-incremental.zip",
-                "os_patch_level": "2026-09-01",
-                "os_sdk_level": 37,
-                "sha256": "0d626f863470e0145efaa6fef5505367ae7bd4f91a448d80ea8249945b9f1347",
-                "size": 55801493,
-                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/caOnzkFNm8TWFA",
-                "ota_property_files": "payload_metadata.bin:5684:563010,payload.bin:5684:55792596,payload_properties.txt:55798338:154,apex_info.pb:3131:1664,care_map.pb:4842:795,metadata:69:785,metadata.pb:922:2161                    "
-            }
-        ],
         "additional_images": [
             {
                 "name": "recovery-ziyi_20260915_0246.img",
