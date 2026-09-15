@@ -1,49 +1,49 @@
 [
     {
-        "datetime": 1789428612,
+        "datetime": 1789434951,
         "files": [
             {
-                "filename": "PixelOS_ziyi-17.0-20260914-2330.zip",
+                "filename": "PixelOS_ziyi-17.0-20260915-0115.zip",
                 "os_patch_level": "2026-09-01",
                 "os_sdk_level": 37,
-                "sha256": "7d3ef60977a8d535b6f1825bb89bffaa1283949b2d97cbda90f2c5baebd6c613",
-                "size": 3214635498,
+                "sha256": "5a4d67caf73a3abdd1f101f46fda16f9244631e9118f0575ebc67690113f1da4",
+                "size": 3214630305,
                 "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/GZv4mXtKrDoPwg",
-                "ota_property_files": "payload_metadata.bin:4528:186660,payload.bin:4528:3214627755,payload_properties.txt:3214632341:156,apex_info.pb:2191:1448,care_map.pb:3686:795,metadata:69:679,metadata.pb:816:1327                        "
+                "ota_property_files": "payload_metadata.bin:4528:186660,payload.bin:4528:3214622562,payload_properties.txt:3214627148:156,apex_info.pb:2191:1448,care_map.pb:3686:795,metadata:69:679,metadata.pb:816:1327                        "
             }
         ],
         "type": "ci",
         "version": "17.0",
         "incremental": [
             {
-                "filename": "PixelOS_ziyi-17.0-20260914-2330-incremental.zip",
+                "filename": "PixelOS_ziyi-17.0-20260915-0115-incremental.zip",
                 "os_patch_level": "2026-09-01",
                 "os_sdk_level": 37,
-                "sha256": "e7ffb094cefd38728d079c26a673c8e38543fcb9e064b5299885b54477840ef4",
-                "size": 55805284,
+                "sha256": "6d1cbbc0fa8b2b095088b9bf3cd006e873b22c630aa9fae293447c829fa55988",
+                "size": 55029925,
                 "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/O75KvD4a03p5ZA",
-                "ota_property_files": "payload_metadata.bin:5684:563222,payload.bin:5684:55796387,payload_properties.txt:55802129:154,apex_info.pb:3131:1664,care_map.pb:4842:795,metadata:69:785,metadata.pb:922:2161                    "
+                "ota_property_files": "payload_metadata.bin:5684:570757,payload.bin:5684:55021028,payload_properties.txt:55026770:154,apex_info.pb:3131:1664,care_map.pb:4842:795,metadata:69:785,metadata.pb:922:2161                    "
             }
         ],
         "additional_images": [
             {
-                "name": "recovery-ziyi_20260914_2330.img",
-                "SHA256": "3749fc987b321eaebdd8695cb1d3efb491116fd999ff0bf5442e37f3c465537f",
+                "name": "recovery-ziyi_20260915_0115.img",
+                "SHA256": "f60c2d2824d429ca6b6dab0838881e5b56da697f6877c4f9a7552c42b48abf13",
                 "size": 104857600
             },
             {
-                "name": "dtbo-ziyi_20260914_2330.img",
-                "SHA256": "81cc76d4d803a78e1e6b4426f313a741f1b923ca6af6a0c2a08eb04d9fc85ecb",
+                "name": "dtbo-ziyi_20260915_0115.img",
+                "SHA256": "d61d83c086b5f4691ba652d6fe3e6c196d10bfb91a4555a28da88022b5ee376d",
                 "size": 25165824
             },
             {
-                "name": "boot-ziyi_20260914_2330.img",
-                "SHA256": "9c59ca1217f6b2ee17096ba6146304c236583f9d543f65235661af3f7d9832ee",
+                "name": "boot-ziyi_20260915_0115.img",
+                "SHA256": "c679aaa5ea33e0ff99d0e4c8f8a6d5eb89b886467ecf61191451749a52341110",
                 "size": 201326592
             },
             {
-                "name": "vendor_boot-ziyi_20260914_2330.img",
-                "SHA256": "a55ef6b7b2c041d69fa7800c0b4f50fc47e1cea858d37448e011a0192fb5f880",
+                "name": "vendor_boot-ziyi_20260915_0115.img",
+                "SHA256": "46a4432cb2fc799e32594a37fb6fe9c51a1b6e695b80ba3f0102218cdd987643",
                 "size": 100663296
             }
         ]
