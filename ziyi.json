@@ -1,0 +1,40 @@
+[
+    {
+        "datetime": 1789440370,
+        "files": [
+            {
+                "filename": "PixelOS_ziyi-17.0-20260915-0246.zip",
+                "os_patch_level": "2026-09-01",
+                "os_sdk_level": 37,
+                "sha256": "12e09283dcb9ccfade4903dc1763fb108b75582470cc69b4b7d050318b44faaf",
+                "size": 3214633114,
+                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/yX8EhirzhW60-w",
+                "ota_property_files": "payload_metadata.bin:4528:186660,payload.bin:4528:3214625371,payload_properties.txt:3214629957:156,apex_info.pb:2191:1448,care_map.pb:3686:795,metadata:69:679,metadata.pb:816:1327                        "
+            }
+        ],
+        "type": "ci",
+        "version": "17.0",
+        "additional_images": [
+            {
+                "name": "recovery-ziyi_20260915_0246.img",
+                "SHA256": "8af9879ae462788fd66d01e3c8d14c0c289f7b25f954123f3f53eb64c733e685",
+                "size": 104857600
+            },
+            {
+                "name": "dtbo-ziyi_20260915_0246.img",
+                "SHA256": "75afecc33d3dcae82c0bdad6d8537cfb36ab3b75966a39cc063d91b6ff1be96c",
+                "size": 25165824
+            },
+            {
+                "name": "boot-ziyi_20260915_0246.img",
+                "SHA256": "6a0095bbb6bb9f38406710c9cbaa25d848c3d13ed21518d3bb8f8d2aaeb7fdac",
+                "size": 201326592
+            },
+            {
+                "name": "vendor_boot-ziyi_20260915_0246.img",
+                "SHA256": "2162c1ea3bba40e22460c807e5faa66bd617329ea389658c77243b6cf2fe54da",
+                "size": 100663296
+            }
+        ]
+    }
+]
