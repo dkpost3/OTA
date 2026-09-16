@@ -8,7 +8,7 @@
                 "os_sdk_level": 37,
                 "sha256": "c0d548f39fc7d21ffc948e0b79208155ed0a3ef31e92b20a764f96c60824f37d",
                 "size": 3215189706,
-                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/Q0GDUVYlHmECeA",
+                "url": "https://getfile.dokpub.com/yandex/get/",
                 "ota_property_files": "payload_metadata.bin:4528:186718,payload.bin:4528:3215181963,payload_properties.txt:3215186549:156,apex_info.pb:2191:1448,care_map.pb:3686:795,metadata:69:679,metadata.pb:816:1327                        "
             }
         ],
@@ -21,7 +21,7 @@
                 "os_sdk_level": 37,
                 "sha256": "8e3ae81d70249d6417a025ddb77e92e09bfe7196b97591bb8cff06a9ad1f4c89",
                 "size": 20635022,
-                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/o6T5cChdLYfl_A",
+                "url": "https://getfile.dokpub.com/yandex/get/",
                 "ota_property_files": "payload_metadata.bin:5684:503740,payload.bin:5684:20626125,payload_properties.txt:20631867:154,apex_info.pb:3131:1664,care_map.pb:4842:795,metadata:69:785,metadata.pb:922:2161                    "
             }
         ],
