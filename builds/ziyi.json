@@ -1,49 +1,49 @@
 [
     {
-        "datetime": 1789574358,
+        "datetime": 1789960263,
         "files": [
             {
-                "filename": "PixelOS_ziyi-17.0-20260916-1559.zip",
+                "filename": "PixelOS_ziyi-17.0-20260921-0311.zip",
                 "os_patch_level": "2026-09-01",
                 "os_sdk_level": 37,
-                "sha256": "c0d548f39fc7d21ffc948e0b79208155ed0a3ef31e92b20a764f96c60824f37d",
-                "size": 3215189706,
-                "url": "https://getfile.dokpub.com/yandex/get/",
-                "ota_property_files": "payload_metadata.bin:4528:186718,payload.bin:4528:3215181963,payload_properties.txt:3215186549:156,apex_info.pb:2191:1448,care_map.pb:3686:795,metadata:69:679,metadata.pb:816:1327                        "
+                "sha256": "d0eb386bfdf401217cc1da238c6d190dd3b3b00637b4b7a67e829b07f15322ad",
+                "size": 3229751603,
+                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/MAQpcNcKK13fww",
+                "ota_property_files": "payload_metadata.bin:4422:189550,payload.bin:4422:3229743966,payload_properties.txt:3229748446:156,apex_info.pb:2085:1448,care_map.pb:3580:795,metadata:69:679,metadata.pb:816:1221                        "
             }
         ],
         "type": "ci",
         "version": "17.0",
         "incremental": [
             {
-                "filename": "PixelOS_ziyi-17.0-20260916-1559-incremental.zip",
+                "filename": "PixelOS_ziyi-17.0-20260921-0311-incremental.zip",
                 "os_patch_level": "2026-09-01",
                 "os_sdk_level": 37,
-                "sha256": "8e3ae81d70249d6417a025ddb77e92e09bfe7196b97591bb8cff06a9ad1f4c89",
-                "size": 20635022,
-                "url": "https://getfile.dokpub.com/yandex/get/",
-                "ota_property_files": "payload_metadata.bin:5684:503740,payload.bin:5684:20626125,payload_properties.txt:20631867:154,apex_info.pb:3131:1664,care_map.pb:4842:795,metadata:69:785,metadata.pb:922:2161                    "
+                "sha256": "11fe4bb537d4c44b84b5af896d6c0afbdcc4ffc41a7e8b393bfcc68317f8eccd",
+                "size": 77813495,
+                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/nynrqTYJvf11nA",
+                "ota_property_files": "payload_metadata.bin:5578:592829,payload.bin:5578:77804704,payload_properties.txt:77810340:154,apex_info.pb:3025:1664,care_map.pb:4736:795,metadata:69:785,metadata.pb:922:2055                    "
             }
         ],
         "additional_images": [
             {
-                "name": "recovery-ziyi_20260916_1559.img",
-                "SHA256": "60a2c77071029838406746032a47c85ef17049dccfadd7c84c0fc95581b79a2c",
+                "name": "recovery-ziyi_20260921_0311.img",
+                "SHA256": "41b7b6be6def4b2d8e1ac7015b677f4359a5a37028a60ac57869df965ba2379d",
                 "size": 104857600
             },
             {
-                "name": "dtbo-ziyi_20260916_1559.img",
-                "SHA256": "116c207a4c05071fab91034586547fe3ef0d0a78486ec47e7e2f15bf8c16b694",
+                "name": "dtbo-ziyi_20260921_0311.img",
+                "SHA256": "d8e2d6bcc9331e4a257ebf95020e6a543b60a317c741e944e64a3249b8cc5a42",
                 "size": 25165824
             },
             {
-                "name": "boot-ziyi_20260916_1559.img",
-                "SHA256": "966359c49368a2d0a8a90dc687da87944a495ad088114b98bf897c3023f6553c",
+                "name": "boot-ziyi_20260921_0311.img",
+                "SHA256": "5c79b28c20517b7532546472901625dd20a309dcec7bb2a9836dce2a22b8bcf3",
                 "size": 201326592
             },
             {
-                "name": "vendor_boot-ziyi_20260916_1559.img",
-                "SHA256": "2eee1fc4e75afcd367161a17968b5951767785b95f498bf3f3473fef7b2fbe01",
+                "name": "vendor_boot-ziyi_20260921_0311.img",
+                "SHA256": "047d9d9c3dd91f980f45051d8d2548903f55c9d628fe158ef66a701311a4506e",
                 "size": 100663296
             }
         ]
