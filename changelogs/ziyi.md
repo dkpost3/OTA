@@ -1,20 +1,198 @@
-# 14-Sep-2026
+# 21-Sep-2026
 
 ## `build/make`
-- fixup! target: Don't include AOSP sounds on CUSTOM_BUILD (`026d895c1b`, Majaahh)
+- fixup! target: Don't include AOSP sounds on CUSTOM_BUILD (`828448d2c8`, Majaahh)
+
+## `frameworks/av`
+- MediaCodec: Conditionally use legacy setRange for MediaCodecBuffer (`4e73f02b13`, johnmart19)
+- MediaCodec: restore surface generation after reconnect (`6b5f6b285b`, johnmart19)
 
 ## `frameworks/base`
-- Fix Bluetooth tile dialog subtitle alignment (`4eac95d24f46`, Lunia)
-- SystemUI: show location indicator for OP_COARSE_LOCATION (`ec1f7e059942`, inthewaves)
+- keystore: Support keybox bundles and reuse backend certificates (`b584e2f75b2b`, Ashwin Devi Srinivasan)
+- SystemUI: Use Material3 switches for internet and BT dialog tile (`c860569c083d`, Abhay Singh Gill)
+- keystore: Attach keybox chains to KeyMint generated keys (`da43746440b6`, Ashwin Devi Srinivasan)
+- PropImitationHooks: Preserve device identity in Play Store (`8adebf375ac3`, Ashwin Devi Srinivasan)
+- SystemUI: show location indicator for OP_COARSE_LOCATION (`04d7eab8f48f`, inthewaves)
+
+## `packages/apps/ColumbusService`
+- ColumbusService: Import stock TFLite model (`0a74f10`, charcoalpt)
+
+## `packages/apps/Settings`
+- Settings: Validate keybox imports with the framework parser (`7ab7b3da866`, Ashwin Devi Srinivasan)
+
+# 20-Sep-2026
+
+## `frameworks/base`
+- SystemUI: Internet & Bluetooth dialog fixes (`967733c9ca4e`, Lunia)
+- Fix silence-injection policy skip in VirtualAudioController (`6465c19404d0`, Duy Truong)
+- [26Q2] Mitigate BAL bypass via Companion Device Manager (`57ec25f8e099`, Achim Thesmann)
+- Fix boot-loop vulnerability in setPermissionGrantState (`4d0226d1e061`, Iustin Ventaniuc)
+- Fix a regression in ECM mode setting after package install (`f8f2d90d611c`, yutingfang)
+- Sanitize labels in GrantCredentialsPermissionActivity (`c4268bd75bde`, Aseem Kumar)
+- Truncate long device admin descriptions (`72f75e08f30d`, Gabriel Roman)
+- Limit knownActivityEmbeddingCerts in manifest (`c2b1bf8566f9`, William Loh)
+- Use byte count rather than string length for NMS component name check (`fa2da2518b92`, Duy Truong)
+- SystemUi UsbDialog: fix label vulnerability (`7db09004e4ae`, Daniil Hrybchuk)
+- Fix path traversal and missing ownership check in LocaleManagerService (`3c7407be138f`, Josh Hou)
+- Add Task-level input sink to block cross-task tap pass-through (`1dd27666d6f7`, Jiaming Liu)
+- Move input sink on top of the Activity when needed (`cd79db09eafc`, chihtinglo)
+- Check notification permission in getAuthToken(notifyOnAuthFailure). (`b6cb5e35b329`, Dmitry Dementyev)
+- Add size validation and trimming for ShortcutInfo objects. (`bf02eb3c4446`, Devarshi Bhatt)
+- Hide media on smartspace view when setting is disabled (`e03259165c78`, Michael Mikhail)
+- Update host visibility whenever lockscreen state changes (`a6f563f0e11f`, Michael Mikhail)
+- Autofill SaveUi URL validation and FLAG_IMMUTABLE (`5fff84bcc066`, Yutong Zhang)
+- CVE-2025-22442: set profile user restrictions earlier (`91dc9ab59782`, Gabriel-Radu Ilca)
+- RESTRICT AUTOMERGE Filter ignorable Unicode codepoints in ExternalStorageProvider (`9a7020a43451`, Himanshu Arora)
+- RESTRICT AUTOMERGE [ExternalStorageProvider] Revoke URI permissions by path (`9ae514637e09`, Himanshu Arora)
+- Restrict VirtualDeviceImpl methods to device owner. (`da39e081ecc8`, Biswarup Pal)
+- Set min_sdk_version in GooglePackageInstaller (`f848caa2120a`, Prabal Singh)
+
+# 19-Sep-2026
+
+## `external/freetype`
+- [ttgxvar] Check for overflow in array size computation. (`07e81e3e0`, Werner Lemberg)
+
+## `external/wpa_supplicant_8`
+- Fix heap OOB write in Robust AV SCS Response handler (`3346cba3`, Duy Truong)
+- Fix NAN frequency list handling in AIDL interfaces. (`34b9ff4d`, Nate Jiang)
+
+## `frameworks/av`
+- Fix type confusion in mediatuner service (`df69b1fa6c`, sadiqsada)
+- Fix race conditions in CryptoHal plugin usage (`abd1ab3d3f`, Kyle Zhang)
+- Camera: Fix heap OOB read/write in camera mappers (`1530f3b832`, Shuzhen Wang)
+- DeprecatedCamera3StreamSplitter: Add bounds check for slot index (`2e34bc5ec0`, Duy Truong)
+- Fix MediaBuffer size-inflation off-by-32 bug (`1ef2e8bcab`, Duy Truong)
+
+## `frameworks/opt/telephony`
+- Fix ArrayIndexOutOfBoundsException in SIMRecords due to invalid EF_CFIS/EF_CFF (`b3996873db`, Arun)
+- Block in-call MMI execution for USSD requests. (`bdeccc0b6c`, sungcheol ahn)
+
+## `hardware/nxp/nfc`
+- Fix Use-After-Free in NXP NFC HAL timer teardown (`af6bbbc`, Duy Truong)
+
+## `hardware/st/nfc`
+- Fix out-of-bounds write in stpropnci_process (`31f568a`, Duy Truong)
+
+## `packages/apps/ContactsPicker`
+- Change to startActivityAsCaller when forwarding ACTION_PICK intent (`2874941`, Kasia Krejszeff)
+
+## `packages/apps/Settings`
+- Replace DeviceAdminInfo.loadDescription() with loadDescriptionSafe() (`9a78c07996e`, Gabriel Roman)
+- Fix confused deputy in Bluetooth settings dashboard (`d79841a1ad3`, Duy Truong)
+- Sanitize package labels in SettingsApplication (`6e7d2a080f9`, Mihai Stancu)
+
+## `packages/modules/Bluetooth`
+- GATT: Fix notifications sent to remote device without security checks (`cf17b64464`, Jakub Pawłowski)
+- [RESTRICT AUTOMERGE] Enforce incoming CTKD security requirements (`78e11e9cec`, Brian Delwiche)
+
+## `packages/modules/Nfc`
+- Fix integer underflow in rw_ci_data_cback (`11ddd3b7b`, TYM Tsai)
+- Fix heap buffer overflow in nfa_t4tnfcee_store_rx_buf (`f645ac6f3`, TYM Tsai)
+- Fix bounds check underflow and GKI buffer leak in T4T write (`1c7d79b34`, Kyle Hsiao)
+- Prevent buffer overflow on oversized HAL packets (`5f2b6f6fa`, Kyle Hsiao)
+- Fix Heap OOBW in nfa_t4tnfcee_store_rx_buf() (`4179aa782`, Kyle Hsiao)
+- Prevent information disclosure over RF in rw_t5t.cc (`760ab94dd`, Kyle Hsiao)
+
+## `packages/modules/Telephony`
+- Fix server-triggered StackOverflowError in TS.43 phone number fetch (`bb5e409`, Hyein Yu)
+
+## `packages/modules/Wifi`
+- Deny system app status for Private Compute Core UIDs in WifiPermissionsUtil. (`6560983012`, Oscar Shu)
+
+## `packages/providers/ContactsProvider`
+- Restrict max size for Note.NOTE field (`61bc235d`, Duy Truong)
+
+## `packages/providers/DownloadProvider`
+- RESTRICT AUTOMERGE Fix ZWSP path bypass in DownloadProvider (`a647f32c`, Riya Maheshwari)
+- RESTRICT AUTOMERGE Fix DownloadProvider completed download security bypass (`ce4c796f`, Dipankar Bhardwaj)
+- RESTRICT AUTOMERGE Fix path traversal vulnerability in DownloadStorageProvider (`4bee2aa0`, Riya Maheshwari)
+- RESTRICT AUTOMERGE Revoke URI permissions for specific document paths (`1d3f1f52`, Himanshu Arora)
+
+## `packages/providers/MediaProvider`
+- RESTRICT AUTOMERGE Use parameterised queries for photo picker search request queries (`eaf62ef2f`, Ishneet Ahuja)
+- RESTRICT AUTOMERGE Revoke URI permissions on file path updates (`d5bc724e4`, Himanshu Arora)
+
+## `packages/providers/TelephonyProvider`
+- TelephonyProvider: Fix SQL injection in projection and sortOrder (`f0b80a81`, Pranit Rane)
+
+## `packages/services/BuiltInPrintService`
+- Limit media-supported values (`0d48be3`, Benjamin Gordon)
+
+## `packages/services/Telecomm`
+- Fix privilege escalation in ACTION_CALL intent trampoline (`b49dd5a65`, Thomas Stuart)
+- Fix MMI check bypass via leading whitespace in tel URI. (`88a183bd1`, Tyler Gunn)
+
+## `packages/services/Telephony`
+- Fix StackOverflowError in SatelliteEntitlementController (`b2505ac94`, Aishwarya Mallampati)
+- [Telephony] Secure contact URI access in Call Forwarding (`942924882`, Steve Statia)
+
+## `system/fs/fs_mgr`
+- libfiemap: Return false in MapAllImages if metadata is missing (`65789bc4`, Howard Chen)
+
+## `system/libfmq`
+- Reapply "Handle corrupted read/write pointers in read funcitons" (`a449843`, Devin Moore)
+
+## `system/libufdt`
+- libufdt: Fix stack overflow risk in vendor qsort (`fd2ed45`, Mike McTernan)
+
+# 18-Sep-2026
+
+## `frameworks/native`
+- Merge "surfaceflinger: Hookup per fps durations" into seventeen (`fe64500f2f`, Ashwin Devi Srinivasan)
+
+## `packages/apps/Updater`
+- Updater: Add a check for updates entry to the overflow menu (`4330d4f`, Ashwin Devi Srinivasan)
+- Updater: Offer an incremental only when it applies to this build (`96fd3e1`, Ashwin Devi Srinivasan)
+- Updater: Don't show an install error for a failed incremental (`0b3bd8c`, Ashwin Devi Srinivasan)
+- Updater: Treat a missing incremental download as a failed incremental (`78aea08`, Ashwin Devi Srinivasan)
+- Updater: Show the full package once an incremental fails (`cebef22`, Ashwin Devi Srinivasan)
+- Updater: Drop the updates the running build already carries (`9fd24a4`, Ashwin Devi Srinivasan)
+
+# 17-Sep-2026
+
+## `packages/apps/Updater`
+- Revert "Updater: Add a preference to disable incremental updates" (`875348e`, Ashwin Devi Srinivasan)
+- Updater: Remove the view downloads action (`1231051`, Ashwin Devi Srinivasan)
+- Updater: Show the live update status in the headline (`40b2604`, Ashwin Devi Srinivasan)
+
+# 16-Sep-2026
+
+## `frameworks/native`
+- surfaceflinger: Hookup per fps durations (`b24a9c1be8`, AdarshGrewal)
+
+## `hardware/qcom-caf/sm8750/display/core`
+- sdm: Operate FINGERPRINT_MASK for oplus optical UDFPS (`89aa191`, pjgowtham)
+- sdm: Support HBM for Samsung optical UDFPS (`05cf5af`, Atakan)
+- sdm: get around client compositioning for FOD pressed layer (`59b5608`, Demon Singur)
+- sdm: mark FOD pressed layer by setting a bit on ZPOS (`30f5e3c`, Demon000)
+
+## `hardware/qcom-caf/sm8750/display/hal`
+- hal: Define `oplus_udfps` soong variable (`9c00ef9bd`, Giovanni Ricca)
+- hal: Define `samsung_udfps` soong variable (`5b369db53`, Giovanni Ricca)
+- hal: Define `udfps` soong variable (`c90e160b6`, Giovanni Ricca)
+
+## `packages/apps/Aperture`
+- Aperture: Add REUSE to gerrit checks (`9ec3d51`, Luca Stefani)
+- Aperture: Add missing BSD-3-Clause license (`bc2d271`, Luca Stefani)
+
+# 15-Sep-2026
+
+## `packages/apps/Aperture`
+- Automatic translation import (`e22e882`, LineageOS Infra)
+
+## `tools/extract-utils`
+- extract_utils: Allow generating blueprint rules for kernel modules (`ff6589c`, Tuan Anh)
+
+## `vendor/lineage`
+- Merge branch 'lineage-24.0' of https://github.com/LineageOS/android_vendor_lineage into HEAD (`b8bd90b4`, lemezohaib)
+
+# 14-Sep-2026
 
 ## `hardware/qcom-caf/sm8650/audio/pal`
 - pal: Select VoIP calibration by stream sample rate (`11390828`, Mathias Gluszczynski)
 
-## `system/memory/libmeminfo`
-- sysmeminfo: Avoid abort when map is missing (`7028eee`, Hridaya Prajapati)
-
-## `vendor/lineage`
-- kernel: Probe libclang before using it for rust bindgen (`a5afe97a`, Yumi Yukimura)
+## `vendor/qcom/opensource/audio-hal/st-hal-ar`
+- st-hal: Make forceRecognitionEvent support optional (`2b05733`, LuK1337)
 
 # 13-Sep-2026
 
@@ -26,6 +204,9 @@
 
 ## `hardware/qcom-caf/sm8550/audio/pal`
 - pal: Select VoIP calibration by stream sample rate (`0dca4090`, Mathias Gluszczynski)
+
+## `vendor/lineage`
+- kernel: Probe libclang before using it for rust bindgen (`7ca77de1`, Yumi Yukimura)
 
 # 12-Sep-2026
 
@@ -44,121 +225,3 @@
 
 ## `hardware/qcom-caf/thermal-legacy-um`
 - thermal-hal: Update skin temperature threshold for sdmmagpie (`4a15262`, Giovanni Ricca)
-
-## `vendor/lineage`
-- Merge branch 'lineage-24.0' of https://github.com/LineageOS/android_vendor_lineage into HEAD (`28ea0917`, lemezohaib)
-
-# 11-Sep-2026
-
-## `vendor/lineage`
-- kernel: Wipe bazel dist dir on each build (`dde7a2aa`, Alexander Koskovich)
-- kernel: Seperate bazel-out from the dist dir (`0f3eb2d4`, Alexander Koskovich)
-- release: Bump Security String to 2026-09-01 (`95bc7319`, Nolen Johnson)
-- kernel: Add RBE support (`b104fc7b`, LuK1337)
-
-# 10-Sep-2026
-
-## `packages/apps/Updater`
-- Updater: Add a preference to disable incremental updates (`cb812f2`, Ashwin Devi Srinivasan)
-- Updater: Support incremental OTA packages (`b07544a`, Ashwin Devi Srinivasan)
-
-## `vendor/lineage`
-- kernel: Add AOSP build-tools to inline kernel PATH (`790f1937`, Alexander Koskovich)
-- build: Fix typo in kernel.mk (`2116535d`, Tommaso Fonda)
-
-# 09-Sep-2026
-
-## `packages/apps/Updater`
-- Updater: Migrate import progress dialog to Jetpack Compose (`848af1b`, Lunia)
-- Updater: Use Compose system update icon (`be6fa0c`, Lunia)
-
-## `vendor/lineage`
-- vars: Add kaanapali-{audio,video,wlan} (`e7d54ba8`, LuK1337)
-- vars: Add kaanapali-vendor (`40ebf64b`, LuK1337)
-- Merge commit 'refs/changes/75/497575/3' of https://github.com/LineageOS/android_vendor_lineage into HEAD (`dc91838c`, Ashwin Devi Srinivasan)
-
-# 08-Sep-2026
-
-## `art`
-- Make the runtime-generated app image read-only (`03ecb9ce33`, Nicolas Geoffray)
-
-## `development`
-- Fix potential NPEs in PduParser.parsePartHeaders (`d36bcc0d6`, Soumyadeep Paul)
-
-## `external/exfatprogs`
-- ANDROID: Fix fsck overflows when handling bad clu_count or vol_length fields. (`96fc1f4`, David Anderson)
-- ANDROID: Add support for building exfat tests. (`e2e0f4f`, David Anderson)
-
-## `frameworks/av`
-- Fix OOB in DynamicsProcessing MBC band processing (`06458fc827`, Duy Truong)
-- Fix heap-buffer-overflow in AudioAttributes unmarshalling (`ce3fda8e0e`, Venkatarama Avadhani)
-
-## `frameworks/base`
-- aapt2: Sanitize Javadoc comments to prevent code injection (`db291d9dc8bd`, Mark Punzalan)
-- Fix potential NPEs in PduParser.parsePartHeaders (`479f93381ad2`, Soumyadeep Paul)
-- RESTRICT AUTOMERGE: Fix vulnerabilities in PduParser (`df744839e7b4`, Thomas Nguyen)
-- ResStringPool: Validate styleCount and offsets (`54ac9adea408`, Jeremy Meyer)
-- Remove CLASS_EXISTENCE_CHECK metadata from ConnectivityCallListenerService (`36f695a8e524`, sungcheol ahn)
-- RESTRICT AUTOMERGE Fix security vulnerability in getManageSpaceActivityIntent (`1b5d255eae37`, Yang Kudurshian)
-- Validate caller UID in openProxyFileDescriptor (`ab3081a8e44f`, Darshil Shah)
-- Add bracket checking support to SQLiteTokenizer (`be310a1d9454`, Duy Truong)
-- Fix security check bypass (`dbe5ab03b897`, Duy Truong)
-- Strip URI grants in ConfigActivityProxy (`27aa96a5720d`, Taso Dane)
-- Fix BAL bypass via getAppMarketActivityIntent (`c56ee3ca39dc`, Himanshu Gupta)
-- LauncherApps: Scrub sensitive URIs in install sessions (`c1846ac1e4da`, Prabal Singh)
-- Remove usage of Parcel.allowSquashing in RemoteViews and immediate unparceling of Bundle (`5b66d57b6a16`, Vipul Singh)
-- Revert^2 "Writing ApplicationInfoCache instead of multiple ApplicationInfos for nested RemoteViews" (`a73e7ac3d7ac`, Vipul Singh)
-- Fix using the base type for checking (`03a20093e332`, Candice Lo)
-- Properly parse meta_key in AccountsDb. (`ec2c67d49c2d`, Dmitry Dementyev)
-- Don't parse 3p recognizer metadata in safe mode (`8309b1c4a01f`, Omar Eissa)
-- Dedup SessionParams.whitelistedRestrictedPermissions (`ce1df3fc3017`, William Loh)
-- Fix & speed up IntentForwarderActivityTest (`c7a161e13835`, Matt Casey)
-- Validate caller in SlicePermissionActivity to prevent spoofing. (`ce41d92a4412`, Yash Nagayach)
-- Update URI permission granting logic in Intent Redirection Hardening (`a636a139d48b`, Yang Kudurshian)
-- Move intent redirect checks before intent resolution. (`76b5c7ebfdbb`, Nan Wu)
-- Fix intent redirect bypass via selector in addCreatorToken (`94193d05a839`, Nan Wu)
-- Refactor: Add permission checks to Unarchive activities (`660b383fdce4`, Prabal Singh)
-- fix an inverted boolean check (`19b63ba95f8b`, Song Chun Fan)
-- Check notification setting for given user (`4c2f227c3430`, Evan Severson)
-- Use consistent mmap/unmap sizes in MemoryIntArray (`6d8868becfc1`, Jared Duke)
-
-## `hardware/qcom-caf/thermal`
-- thermal-hal: Relax LIGHT and MODERATE skin limits for volcano (`a54c4be`, Rohit Sekhar)
-
-## `packages/apps/Settings`
-- Sanitize sensitive BiometricsSettingsBase extra (`cee0f8941ad`, Milton)
-- Ensure remote device credential alias is used for action CONFIRM_REMOTE_DEVICE_CREDENTIAL. (`bb425f1964e`, Joe Bolinger)
-- Remove EXTRA_DATA from ConfirmDeviceCredentialActivity (`e29fdcb7fac`, Diya Bera)
-- Strip URI grant flags in AppRestrictionsFragment (`5026849b1da`, Tetiana Meronyk)
-- Remove dialog building logic from PaymentDefaultDialog onCreate. (`6a06dace2b1`, Kyle Hsiao)
-
-## `packages/modules/Bluetooth`
-- Fix buffer overflow in UUID parsing (`4f36f54dd8`, Brian Delwiche)
-- Fix out-of-bounds heap write in SnoopLogger (`6a2bf1d22a`, Brian Delwiche)
-- Fix cross-thread UAF in AvrcpService updates (`fc76a3ad5a`, Brian Delwiche)
-- Fix uninitialized pointer dereference in MsftExtensionManager (`18eea5b9e1`, Brian Delwiche)
-
-## `packages/modules/Nfc`
-- Fix out-of-bounds write in NFC activation handling (`919e0d7f1`, Kyle Hsiao)
-
-## `system/core`
-- ashmem_test: Add tests related to memfd's size file seals (`a5313eaec`, Isaac J. Manjarres)
-- ashmem: Only handle size-sealed memfds (`1e5923617`, Isaac J. Manjarres)
-
-## `vendor/crowdin`
-- crowdin: Import translations (`0a7a9d8`, github-actions[bot])
-- crowdin: Sync resources with upstream sources (`a6f6b36`, github-actions[bot])
-
-## `vendor/lineage`
-- release: Bump Security String to 2026-09-01 (`fe3293be`, Nolen Johnson)
-
-# 07-Sep-2026
-
-## `device/lineage/sepolicy`
-- sepolicy: Add policy for SensitivePhoneNumbersService (`89d7484`, Nicholas Lim)
-
-## `lineage/scripts`
-- Merge https://github.com/LineageOS/scripts (`0404400`, hridaya)
-
-## `vendor/crowdin`
-- crowdin: Prepare translation infrastructure (`b8a7178`, Karan Parashar)
