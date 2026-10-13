@@ -1,123 +1,162 @@
-# 30-Aug-2026
+# 13-Oct-2026
 
-## `device/lineage/sepolicy`
-- sepolicy: Label basic USB AIDL HAL service (`6151759`, Yumi Yukimura)
+## `packages/apps/Settings`
+- Settings: Fix face enroll preview transform in non-natural orientations (`dfd120eb601`, LuK1337)
+- Settings: Lock face enroll orientation when the HAL owns the camera (`7d7daaf4a15`, LuK1337)
+- Settings: Support HAL-owned face enrollment preview (`46f37ac761d`, tonyfan)
+- Settings: Make face attention support configurable (`50bdf32b4ff`, LuK1337)
+- Settings: Use expressive lottie for face enroll education (`d5f1572025a`, LuK1337)
+- Settings: Hide extra information from face_enroll_introduction (`4a00a2e8132`, LuK1337)
+- Settings: Replace face enroll particle animation with progress ring (`81b04228c35`, tonyfan)
 
-## `packages/apps/Updater`
-- Updater: Use Compose system update icon (`b93ded1`, rwicept)
-- Updater: Migrate import progress dialog to Jetpack Compose (`144ccf8`, rwicept)
+## `vendor/custom`
+- common: Allow devices to opt out of Paranoid Sense (`f8ded22`, Aditya Choudhury)
 
-## `vendor/pixel/gms`
-- gms: Add accessibility service and ordering configs to GoogleSettingsOverlay (`991faad`, Ashwin Devi Srinivasan)
+# 12-Oct-2026
 
-# 29-Aug-2026
-
-## `frameworks/base`
-- SystemUI: Implement reverse-engineered mobile data confirmation dialog (`64ea1bbe8e61`, Ashwin Devi Srinivasan)
-- VolumeDialog: Fix layout issues with left gravity (`bc9682043b56`, Dmitrii)
-- VolumeDialog: Add overlay-configurable left gravity (`de60be7dac20`, Pranav Vashi)
+## `hardware/lineage/compat`
+- libcodec2: Shim legacy Codec2 WorkBundle (`590c948`, Bruno Martins)
 
 ## `hardware/lineage/interfaces`
-- usb: aidl-basic: Initial AIDL HAL (`ecac852`, Yumi Yukimura)
-- _frameworks: Import displayservice static lib from `android16-qpr2-release` (`aa8abf0`, Michael Bestas)
-- _frameworks: displayservice@1.0: Add framework manifest (`fbb4c37`, Yumi Yukimura)
-- _frameworks: Rename from `android.frameworks` to `lineage.frameworks` (`23dc70d`, Yumi Yukimura)
-- _frameworks: Import stats from `android16-qpr2-release` (`0a935fe`, Michael Bestas)
-- _frameworks: Import displayservice from `android16-qpr2-release` (`5708b39`, Yumi Yukimura)
+- power-libperfmgr: Preserve session state on thread updates (`a0f3ada`, klozz)
+- power-libperfmgr: Fix SessionRecords null deref on ADPF profile switch (`4e6f5eb`, Khargosxh18)
 
-## `hardware/qcom-caf/common`
-- common: Drop no longer used TARGET_COMPILE_WITH_MSM_KERNEL (`2cd569f`, Michael Bestas)
+## `hardware/qcom-caf/sm8450-6.6/audio/primary-hal`
+- audio-ar: Bump VINTF fragments to current (`62783f84`, Alexander Koskovich)
+- effect: Update the Effects version (`344238d7`, Ajender Reddy)
+- core: update device manifest IModule/* and IConfig/default (`b6302832`, Ajender Reddy)
 
-## `packages/apps/Settings`
-- fixup! Settings: Implement reverse-engineered expressive QR generator (`2785ba99453`, rwicept)
+## `hardware/qcom-caf/sm8550/audio/pal`
+- pal: Parse LVACFS microphone feature parameter (`8f0219bb`, pjgowtham)
 
-## `packages/apps/Updater`
-- Updater: Move translations to Crowdin (`a3d2202`, Ashwin Devi Srinivasan)
-- Updater: Add certified props update support (`01dd671`, Ashwin Devi Srinivasan)
+## `hardware/qcom-caf/sm8550/audio/primary-hal`
+- hal: Add LVACFS microphone feature (`86370d78`, pjgowtham)
+
+## `packages/apps/ColumbusService`
+- ColumbusService:  Mark action identifiers as non-translatable (`ec1c0be`, Ashwin Devi Srinivasan)
 
 ## `vendor/crowdin`
-- Import Crowdin Translations (`7dbfcc6`, Karan Parashar)
-- crowdin: Prepare translation infrastructure (`800d5bd`, Karan Parashar)
+- crowdin: Import translations (`b19ea47`, github-actions[bot])
+- crowdin: Sync resources with upstream sources (`e2e7e5d`, github-actions[bot])
+- crowdin: Import translations (`f13a304`, github-actions[bot])
+- crowdin: Sync resources with upstream sources (`72562ec`, github-actions[bot])
 
-# 28-Aug-2026
+# 11-Oct-2026
 
-## `system/memory/libion`
-- libion: Make available to com.android.npumanager (`abd899d`, ralph950412)
+## `hardware/lineage/compat`
+- compat: Share Bluetooth audio configuration conversion logic (`8d1f79e`, Bruno Martins)
+- compat: Also adapt Bluetooth audio configurations for V4 callers (`b4c6b00`, Bruno Martins)
+- compat: Provide libui-v32 (`07768b8`, ChrisCatto)
 
-## `vendor/pixel/gms`
-- gms: Enable one-pane layouts for embedded activities for tablets (`560c311`, Ashwin Devi Srinivasan)
+## `packages/apps/EuiccPolicy`
+- EuiccPolicy: Always enable EUICC packages (`3b3c28e`, Michael Bestas)
 
-# 27-Aug-2026
+# 10-Oct-2026
 
-## `external/chromium-webview/patches`
-- Update Chromium Webview to 152.0.7977.64 (`209a6d2`, Kevin F. Haggerty)
+## `hardware/lineage/compat`
+- compat: Adapt Bluetooth audio configurations for V3 callers (`56fd9f0`, Bruno Martins)
 
-## `external/chromium-webview/prebuilt/arm`
-- Update Chromium Webview arm to 152.0.7977.64 (`80e8063`, Kevin F. Haggerty)
+# 09-Oct-2026
 
-## `external/chromium-webview/prebuilt/arm64`
-- Update Chromium Webview arm64 to 152.0.7977.64 (`a6b2364`, Kevin F. Haggerty)
+## `frameworks/base`
+- fixup! SystemUI: Add support for udfps dim layer (`81b912ee97d9`, bgcngm)
 
-## `external/chromium-webview/prebuilt/x86`
-- Update Chromium Webview x86 to 152.0.7977.64 (`58479e5`, Kevin F. Haggerty)
+# 08-Oct-2026
 
-## `external/chromium-webview/prebuilt/x86_64`
-- Update Chromium Webview x86_64 to 152.0.7977.64 (`2767453`, Kevin F. Haggerty)
+## `device/qcom/sepolicy_vndr/sm8750`
+- sepolicy_vndr: Add required policy for waipio on 6.6 (`78d2d36a`, Alexander Koskovich)
 
-## `vendor/apn`
-- PL: Remove Aster (`eae6025`, Wiktor Rudzki)
-- PL: Remove Mobilking and MNI Mobile (`dae435a`, Wiktor Rudzki)
-- PL: Remove Era & Tak-Tak (`6f1162e`, Wiktor Rudzki)
-- PL: Remove mBank Mobile (`c40ee06`, Wiktor Rudzki)
-- PL: Remove PlusWAP (`37974c6`, Wiktor Rudzki)
-- PL: Remove GaduAIR (`874c462`, Wiktor Rudzki)
-- PL: Remove Carrefour Mova (`5355f6b`, Wiktor Rudzki)
+## `hardware/interfaces`
+- Merge "bluetooth: Remove extraneous closing brace" into seventeen (`7447ce416b`, Ashwin Devi Srinivasan)
 
-# 25-Aug-2026
+## `hardware/lineage/compat`
+- libinput: Provide A16 QPR1 ABI shim (`f1d606c`, Alcatraz323)
 
-## `prebuilts/extract-tools`
-- apktool: Update to v3.0.3 (`aaeb969`, LuK1337)
+## `hardware/qcom-caf/sm8450-6.6/audio/primary-hal`
+- effects: Support effect destroy at any state (`c9d01fc5`, Jaideep Sharma)
 
-# 24-Aug-2026
+# 07-Oct-2026
 
-## `packages/apps/Updater`
-- Updater: Shorten preferences menu entry (`5fc7936`, Ashwin Devi Srinivasan)
-- Updater: Enable performance mode by default (`52da21f`, charcoalpt)
-- Updater: Pixel-fidelity UI refinements (`1b4aad6`, charcoalpt)
-
-# 23-Aug-2026
-
-## `tools/extract-utils`
-- sdat2img.py: Switch shebang line to python3 (`06594f2`, Wiktor Rudzki)
-
-# 22-Aug-2026
-
-## `device/lineage/sepolicy`
-- common: private: Don't audit bootanimation searching system_data_file (`b446a7e`, Nolen Johnson)
-- atv: Don't audit Katniss cgroup spam (`816baaa`, Nolen Johnson)
-- sepolicy: atv: vendor: Don't audit TvSettings reaching into GMS dirs (`a85122e`, Nolen Johnson)
+## `hardware/qcom-caf/common`
+- qcom: Add support for TARGET_NO_CAMERA_CUSTOM_FORMAT (`5e84e6f`, Edwin Moquete)
+- qcom: Conditionally use sm8250 HALs for sdm845 (`04c4fbd`, Edwin Moquete)
 
 ## `packages/apps/Aperture`
-- Aperture: Update CameraX to 1.7.0-alpha03 (`88625a9`, LuK1337)
+- Automatic translation import (`36b3be3`, LineageOS Infra)
 
-## `packages/apps/Updater`
-- Updater: Adapt translations (`8b5fd69`, Ashwin Devi Srinivasan)
-- Updater: Adapt updater for PixelOS (`9f729b6`, Ashwin Devi Srinivasan)
-- Updater: Use Pixel loading animation (`6f29b07`, AdarshGrewal)
-- Updater: Remove superseded settings UI (`0f10268`, AdarshGrewal)
-- Updater: Present updates in the system update screen (`b2d0246`, AdarshGrewal)
-- Updater: Add Pixel-style system update screen (`31d4a1e`, AdarshGrewal)
+## `packages/resources/devicesettings`
+- Automatic translation import (`661fc40`, LineageOS Infra)
 
 ## `vendor/apn`
-- FR: Update APN for SFR (`dd249f1`, Nolen Johnson)
+- apn: Remove YT and separate Palestinian APNs from IL (`35d822d`, dianlujitao)
+- apn: Make "type" optional (`5ff92c8`, dianlujitao)
+- IE: Add Lidl Connect (`6a79ec4`, dianlujitao)
+- NP: Update Nepal apns (`0d9bfd6`, razorloves)
 
-# 21-Aug-2026
+## `vendor/qcom/opensource/commonsys/fm`
+- Automatic translation import (`46bd9dc`, LineageOS Infra)
 
-## `hardware/qcom-caf/sm8150/display`
-- sdm: get around client compositioning for FOD pressed layer (`6e9e06107`, Demon Singur)
+## `vendor/qcom/opensource/usb`
+- etc: Use maxburst instead of Mult for UVC streaming endpoint (`0d32cd0`, Alexander Koskovich)
+- etc: Checkout UVC setup to kodiak CD1A.260905.001.B1 (`7e98aa8`, Alexander Koskovich)
+- etc: Revert recent QCOM UVC commits to make follow up change smaller (`0ce91b4`, Alexander Koskovich)
 
-## `packages/apps/Settings`
-- BlurSwitchPreference: Default from blur_disabled_by_default sysprop (`5b40611e40a`, Ashwin Devi Srinivasan)
+# 06-Oct-2026
 
-## `vendor/qcom/opensource/vibrator`
-- vibratorOL: Enforce min/max timeout for LDO vibrator motor (`7ec5149`, kleidione Freitas)
+## `device/lineage/sepolicy`
+- qcom: Allow platform_app_36 to access soter HAL (`6b12f71`, Flicker372)
+- common: Allow init in recovery to write to proc_firmware_config (`6df6f36`, Alexander Koskovich)
+
+## `device/qcom/sepolicy_vndr/legacy-um`
+- sepolicy_vndr: Globally allow using logdump partition as metadata (`33df3b66`, Bruno Martins)
+- sdm845: Label discard_max_bytes sysfs (`fad5775f`, Edwin Moquete)
+- sdm845: Add target-specific rcsservice policy (`e0f624e4`, Edwin Moquete)
+- sdm845: Label kernel 4.19 devfreq nodes (`82b1de70`, Edwin Moquete)
+- sdm845: Label wakeup nodes (`3893f206`, Edwin Moquete)
+- sdm845: Remove duplicate/deprecated policies (`af61f424`, Edwin Moquete)
+- sepolicy_vndr: Initial non-legacy policy for sdm845 (`f454e3cb`, Edwin Moquete)
+
+## `device/qcom/sepolicy_vndr/sm8450`
+- fixup! taro: Label additional read_ahead_kb node (`a6bcda4d`, Alexander Koskovich)
+- taro: Match all read_ahead_kb nodes (`693fc15b`, dianlujitao)
+- Vendor selinux rules MUST not restrict access to "/dev/hidraw*" (`dbbd1c31`, Biswajit Paul)
+- sepolicy_vndr: allow sensors hal to access /dev directory (`67d51dda`, Jun-Hyung Kwon)
+- sepolicy_vndr: add dynamic sensor and hidraw device access (`ffe72a74`, Jun-Hyung Kwon)
+- sepolicy: Add Power HAL as client of Display HAL (`c72f0b81`, Semi)
+- sepolicy_vndr: Add libsdmextension as same_process_hal_file (`a4ce7737`, Alexander Koskovich)
+
+## `device/qcom/sepolicy_vndr/sm8550`
+- sepolicy: Add Power HAL as client of Display HAL (`3246964e`, Semi)
+
+## `device/qcom/sepolicy_vndr/sm8650`
+- sepolicy: Add Power HAL as client of Display HAL (`3d37d219`, Semi)
+
+## `device/qcom/sepolicy_vndr/sm8750`
+- sepolicy: Add Power HAL as client of Display HAL (`6a5221b2`, Semi)
+- sepolicy_vndr: Add libsdmextension as same_process_hal_file (`afa37c9c`, Alexander Koskovich)
+
+## `hardware/qcom-caf/sm8250/display`
+- gralloc: Protect new buffer allocation support for legacy camera (`bf8aef12e`, Pavel Dubrova)
+
+## `vendor/custom`
+- overlay: Import lottie screen resolution animations from kodiak SettingsGoogle (`e389a1e`, chandu078)
+
+# 05-Oct-2026
+
+## `frameworks/base`
+- SystemUI: Make GhbmIlluminationListener public (`c70de90e3089`, KagehiraNE)
+
+## `hardware/qcom-caf/sm8450-6.6/audio/primary-hal`
+- core: Fix range-loop-construct error (`39039dc5`, Alexander Koskovich)
+- core: Add getFlushFromFrameSupport and mark unsupported (`e48bbb9e`, Alexander Koskovich)
+- core: Account for 'acnMask' (`b789ea1e`, Alexander Koskovich)
+- core: Select parrot VINTF fragment for taro (cape|waipio) (`6baaef78`, Alexander Koskovich)
+- core: Implement createMmapBuffer via getParameters (`ba17919f`, Jaideep Sharma)
+
+## `packages/resources/devicesettings`
+- devicesettings: Remove unused strings (`01e1033`, nift4)
+
+# 04-Oct-2026
+
+## `hardware/qcom-caf/sm8450/audio/pal`
+- Revert "ipc: Handle DSP metadata for non-tunnel streams" (`e60d6893`, Alexander Koskovich)
