@@ -1,38 +1,38 @@
 [
     {
-        "datetime": 1793153165,
+        "datetime": 1793194261,
         "files": [
             {
-                "filename": "PixelOS_ziyi-17.0-20261028-0207.zip",
+                "filename": "PixelOS_ziyi-17.0-20261028-1332.zip",
                 "os_patch_level": "2026-10-01",
                 "os_sdk_level": 37,
-                "sha256": "b3a37921eb4c821da6ea404629093372804de2d89768ae65242b4b963f6bfcb9",
-                "size": 3172885945,
-                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/bzp6maH6YFDYWw",
-                "ota_property_files": "payload_metadata.bin:4529:218910,payload.bin:4529:3172878201,payload_properties.txt:3172882788:156,apex_info.pb:2191:1448,care_map.pb:3686:796,metadata:69:679,metadata.pb:816:1327                        "
+                "sha256": "22f0f7cbc1550feaacfba5151036aeb7b312a5d6b882f140265cca3f59a730d9",
+                "size": 3173078130,
+                "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/hld2Fyeax7yuWg",
+                "ota_property_files": "payload_metadata.bin:4529:218905,payload.bin:4529:3173070386,payload_properties.txt:3173074973:156,apex_info.pb:2191:1448,care_map.pb:3686:796,metadata:69:679,metadata.pb:816:1327                        "
             }
         ],
         "type": "ci",
         "version": "17.0",
         "additional_images": [
             {
-                "name": "recovery-ziyi_20261028_0207.img",
-                "SHA256": "ee6eef4e829c164539411451d367960f16b8c0ecc0fa36a34e9aa70101aafbeb",
+                "name": "recovery-ziyi_20261028_1332.img",
+                "SHA256": "359b0c3efc06a0f48d1a7feadbd9ead61df898c59f5ab6d9630b690fa23d3f3f",
                 "size": 104857600
             },
             {
-                "name": "dtbo-ziyi_20261028_0207.img",
-                "SHA256": "8411b31dff45d6e139128904fc3f6c20811e8443f8dca377a5161d8b4ff9df9c",
+                "name": "dtbo-ziyi_20261028_1332.img",
+                "SHA256": "8a2df2d5e3d72fb93a7c973ddc7de7e6445e96b0552ff248cea0cc146faf1b75",
                 "size": 25165824
             },
             {
-                "name": "boot-ziyi_20261028_0207.img",
-                "SHA256": "52a98648a206b574dc59e33fcb9840abc167faf662b644f9f3ebc9703b71fcfa",
+                "name": "boot-ziyi_20261028_1332.img",
+                "SHA256": "89417c0d99657bbcc78e15c2a73563851b6d4356773d165d359f543266f0b7e6",
                 "size": 201326592
             },
             {
-                "name": "vendor_boot-ziyi_20261028_0207.img",
-                "SHA256": "eacac92e658df21d8985ffd19a74928f2f4827a29d264fc7a3f6eff0a30ac11b",
+                "name": "vendor_boot-ziyi_20261028_1332.img",
+                "SHA256": "662596f95b320757bb8fd708e22cb9c83be54459a6012097b99c9c675f8e0b54",
                 "size": 100663296
             }
         ]
